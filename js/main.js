@@ -32,7 +32,6 @@ $(document).ready(function() {
   })
 
   $(document).on('click', '.select__wrap', function(e) {
-    /* $('.select__wrap').on('click', function(e) { */
     if ($(e.target).is('.select__disabled') || $(e.target).closest('.select__list').length) {
       return false;
     }
@@ -41,8 +40,6 @@ $(document).ready(function() {
 
     if (!$select__wrap.hasClass('select__wrap--active')) {
       if ($select__wrap.hasClass('select__wrap--end-active')) {
-        // предотвращение дребезга
-        // меню ещё закрывается
         return
       }
       showSelectList($select__wrap)
@@ -53,7 +50,6 @@ $(document).ready(function() {
   });
 
   $(document).on('click', '.select__item', function(e) {
-    /* $('.select__wrap').on('click', '.select__item', function(e) { */
     if ($(e.target).is('.select__item--disabled')) {
       return false;
     } else if ($(e.target).is(".select__item")) {
@@ -132,8 +128,6 @@ $(document).ready(function() {
     $(self).find('.select__placeholder').html(text);
   }
 
-  // Возвращает макс прододжительность анимации $self
-  // Поддерживает только время в секундах (s)
   function getTransitionDuration($self) {
     return Math.max(...$self.css('transition-duration').split('s,').map(parseFloat), 0) * 1000 + 50;
   }
