@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Глобал Колекшн</title>
+
+        <link rel="stylesheet" href="fonts/fonts.css">
+         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/test.css">
+    </head>
+    <body>
+
+        <section class="order">
+            <div class="container container--order">
+                <div class="order__logo">
+                    <div class="order__image">
+                        <img src="img/logo-dark.svg" alt="logo">
+                    </div>
+                    <p class="order__title">Глобал Колекшн</p>
+                </div>
+                <div class="order__holder">
+                    <p class="order__elem">Ми отримали Вашу заяву</p>
+                    <div class="order__info">
+                        <p class="order__text"><span>ПІБ:</span>Симон Петрович Плацький</p>
+                        <p class="order__text"><span>Телефон:</span>+38 064 455 78 12</p>
+                        <p class="order__text"><span>Пошта:</span>info@my-site.com</p>
+                    </div>
+                    <div class="order__wrap">
+                        <div class="order__item">
+                            <p class="order__subtitle">Локація #1</p>
+                            <p class="order__col"><span>Послуга:</span>Підкріплення готівкою</p>
+                            <p class="order__col"><span>Кількість точок:</span>64</p>
+                            <p class="order__col"><span>Місто:</span>Київ</p>
+                            <p class="order__col"><span>Обсяг на місяць:</span>3 000 001 - 10 000 000</p>
+                        </div>
+                         <div class="order__item">
+                            <p class="order__subtitle">Локація #2</p>
+                            <p class="order__col"><span>Послуга:</span>Підкріплення готівкою</p>
+                            <p class="order__col"><span>Кількість точок:</span>64</p>
+                            <p class="order__col"><span>Місто:</span>Київ</p>
+                            <p class="order__col"><span>Обсяг на місяць:</span>3 000 001 - 10 000 000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__footer">
+                    <div class="order__block">
+                        <p>Якщо Ви не залишали заявку на сайті Глобал Конекшн, просто проігноруйте цей лист. Якщо у Вас є якісь питання Ви можете надіслати їх на пошту <a href="mailto:info@global-connection.com">info@global-connection.com</a></p>
+                    </div>
+                    <p class="order__all">All rights reserved, Global Connection. 2024</p>
+                </div>
+            </div>
+        </section>
+        <div class="popup__item" id="clone-item" style="display: none">
+            <div class="popup__elem">
+                 <p class="popup__subtitle">Локація <span class="popup__number">1</span></p>
+                <button type="button" class="popup__del"></button>
+            </div>
+            <div class="contacts__info">
+                <label class="contacts__label">Оберіть послугу</label>
+                <div class="select__wrap">
+                    <div class="select__placeholder"></div>
+                    <ul class="select__list" >
+                        <li class="select__item">Інкасація</li>
+                        <li class="select__item">Підкріплення готівкою</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts__info">
+                <label class="contacts__label">Кількість точок</label>
+                <input type="text" class="input">
+            </div>
+            <div class="contacts__info">
+                <label class="contacts__label">Місто</label>
+                <div class="select__wrap">
+                    <div class="select__placeholder"></div>
+                    <ul class="select__list" >
+                        <li class="select__item">Киів</li>
+                        <li class="select__item">Одеса</li>
+                        <li class="select__item">Кривий Ріг</li>
+                        <li class="select__item">Дніпро</li>
+                        <li class="select__item">Львів</li>
+                        <li class="select__item">Луцьк</li>
+                        <li class="select__item">Івано-Франківськ</li>
+                        <li class="select__item">Тернопіль</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts__info">
+                <label class="contacts__label">Обсяг</label>
+                <div class="select__wrap">
+                    <div class="select__placeholder"></div>
+                    <ul class="select__list" >
+                        <li class="select__item">0 - 3 000 000</li>
+                        <li class="select__item">3 000 001 - 10 000 000</li>
+                        <li class="select__item">10 000 001 - 50 000 000</li>
+                        <li class="select__item">50 000 001 - І БІЛЬШЕ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="popup popup--request">
+            <div class="popup__inner">
+                <div class="popup__block">
+                    <div class="popup__holder">
+                        <p class="popup__title">ЗаявКа на послуги</p>
+                         <button type="button" class="popup__close"></button>
+                     </div>
+                    <form action="" class="contacts__holder">
+                        <div class="contacts__info">
+                            <label for="p_fio" class="contacts__label">ПІБ</label>
+                            <input id="p_fio" type="text" class="input">
+                        </div>
+                        <div class="contacts__info">
+                            <label for="p_name" class="contacts__label">Назва підприємства</label>
+                            <input id="p_name" type="text" class="input">
+                        </div>
+                        <div class="popup__wrap">
+                            <div class="popup__item">
+                                <div class="popup__elem">
+                                     <p class="popup__subtitle">Локація <span class="popup__number">1</span></p>
+                                    <button type="button" class="popup__del"></button>
+                                </div>
+                                <div class="contacts__info">
+                                    <label class="contacts__label">Оберіть послугу</label>
+                                    <div class="select__wrap">
+                                        <div id="services_1" class="select__placeholder"></div>
+                                        <ul class="select__list" >
+                                            <li class="select__item">Інкасація</li>
+                                            <li class="select__item">Підкріплення готівкою</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contacts__info">
+                                    <label class="contacts__label">Кількість точок</label>
+                                    <input id="shop_1" type="text" class="input">
+                                </div>
+                                <div class="contacts__info">
+                                    <label class="contacts__label">Місто</label>
+                                    <div class="select__wrap">
+                                        <div id="city_1" class="select__placeholder"></div>
+                                        <ul class="select__list" >
+                                            <li class="select__item">Киів</li>
+                                            <li class="select__item">Одеса</li>
+                                            <li class="select__item">Кривий Ріг</li>
+                                            <li class="select__item">Дніпро</li>
+                                            <li class="select__item">Львів</li>
+                                            <li class="select__item">Луцьк</li>
+                                            <li class="select__item">Івано-Франківськ</li>
+                                            <li class="select__item">Тернопіль</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contacts__info">
+                                    <label class="contacts__label">Обсяг</label>
+                                    <div class="select__wrap">
+                                        <div id="amount_1" class="select__placeholder"></div>
+                                        <ul class="select__list" >
+                                            <li class="select__item">0 - 3 000 000</li>
+                                            <li class="select__item">3 000 001 - 10 000 000</li>
+                                            <li class="select__item">10 000 001 - 50 000 000</li>
+                                            <li class="select__item">50 000 001 - І БІЛЬШЕ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="popup__add" type="button">Додати локацію</button>
+                        <div class="contacts__info">
+                            <label for="p_phone" class="contacts__label">Телефон</label>
+                            <input id="p_phone" type="text" class="input">
+                        </div>
+                        <div class="contacts__info">
+                            <label for="p_email" class="contacts__label">Електронна пошта</label>
+                            <input id="p_email" type="text" class="input">
+                        </div>
+                        <button type="button" class="btn">Звʼязатись</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

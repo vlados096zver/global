@@ -1,0 +1,103 @@
+@import 'responsive.sсss';
+
+.price {
+	overflow: hidden;
+	padding-top: 90px;	
+	padding-bottom: 126px;	
+	@include media(mdx) {
+		padding-bottom: 90px;
+	}
+	@include media(sm) {
+		padding: 60px 0;
+	}
+	.btn {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	&>.container {
+		position: relative;
+		&:after,
+		&:before {
+			position: absolute;
+			content: '';
+			width: 20px;
+			height: 20px;
+			border: 2px solid rgb(223, 220, 242);
+			border-radius: 10px;
+			background: rgb(247, 245, 255);
+		}
+		&:after {
+			left: 160px;
+			bottom: 28px;
+			@include media(lgs) {
+				display: none;
+			}
+		}
+		&:before {
+			right: -30px;
+			top: 24px;
+			@include media(lg) {
+				right: 20px;
+			}
+		}
+	}
+	&__circle {
+		position: absolute;
+		top: 40px;
+		left: -34px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #DFDCF2;
+		@include media(lg) {
+			left: 20px;
+		}
+	}
+	&__wrap {
+		background-color: #F7F5FF;
+		border-radius: 15px;
+		padding: 34px;
+		margin-bottom: 34px;
+		@include media(sm) {
+			padding: 20px;
+		}
+		table {
+			width: 100%;
+			thead th,
+			tbody td {
+				font-size: 16px;
+				color: #000000;
+				text-align: left;
+				padding: 14px;
+				padding-left: 0;
+				@include media(sm) {
+					font-size: 15px;
+					padding: 14px 10px;
+					padding-left: 0;
+				}
+			}
+			thead th {
+				text-transform: uppercase;
+				border-top: 1px solid #B9B9B9;
+				border-bottom: 2px solid #B9B9B9;
+				font-weight: 700;
+			}
+			tbody td {
+				border-bottom: 1px solid #B9B9B9;
+			}
+		}
+	}
+	&__decor {
+		position: absolute;
+		max-width: 100px;
+		left: -50px;
+		bottom: -32px;
+		@include media(xxs) {
+			display: none;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+}

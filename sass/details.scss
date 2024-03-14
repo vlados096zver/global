@@ -1,0 +1,32 @@
+@import 'responsive.sсss';
+
+.details {
+	background-color: rgb(112, 102, 178);
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px 30px;
+		align-items: center;
+		justify-content: center;
+		padding: 16px 20px;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 1.2;
+		color: rgb(157, 146, 228);
+		a {
+			color: inherit;
+			transition: 0.25s color;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+	}
+	&__image {
+		margin-right: 16px;
+	}
+}

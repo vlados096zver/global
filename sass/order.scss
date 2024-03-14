@@ -1,0 +1,126 @@
+@import 'responsive.sсss';
+
+.order {
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: #F7F5FF;
+	padding: 40px 0;
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		padding: 34px;	
+		border-radius: 10px 10px 0px 0px;
+	}
+	&__image {
+		max-width: 38px;
+		flex-shrink: 0;
+		margin-right: 12px;
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+	&__title {
+		font-size: 24px;
+		line-height: 28px;
+		color: rgb(255, 111, 0);
+		text-transform: uppercase;
+		font-weight: 900;
+		@include media(mini) {
+			font-size: 22px;
+		}
+	}
+	&__holder {
+		background-color: #fff;
+		border-top: 4px solid #DFDCF2;
+		padding: 44px 40px;
+		@include media(sm) {
+	        padding: 40px 20px;
+	    }
+	}
+	&__elem {
+		font-size: 24px;
+		line-height: 1.2;
+		color: rgb(255, 111, 0);
+		text-align: center;
+		padding-bottom: 24px;
+	}
+	&__info {
+		max-width: 300px;
+		padding-bottom: 34px;
+		border-bottom: 2px solid #DFDCF2;
+		margin: 0 auto;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 1.2;
+		color: rgb(32, 32, 32);
+		text-align: center;
+		span {
+			margin-right: 15px;
+		}
+		&:not(:last-child) {
+			padding-bottom: 15px;
+		}
+	}
+	&__wrap {
+		padding-top: 28px;
+	}
+	&__item {
+		background-color: #F7F5FF;
+		padding: 30px;
+		border-radius: 4px;
+		@include media(sm) {
+			padding: 30px 20px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	&__subtitle {
+		font-size: 16px;
+		line-height: 1.2;
+		color: rgb(255, 111, 0);
+		padding-bottom: 16px;
+		font-weight: 700;
+	}
+	&__col {
+		font-size: 16px;
+		line-height: 1.2;
+		color: #202020;
+		span {
+			margin-right: 16px;
+		}
+		&:not(:last-child) {
+			padding-bottom: 16px;
+		}
+	}
+	&__footer {
+		background-color: #fff;
+		border-top: 4px solid #DFDCF2;
+		padding: 40px;
+		padding-bottom: 30px;
+	}
+	&__block {
+		font-size: 14px;
+		line-height: 1.4;
+		color: rgb(0, 0, 0);
+		text-align: center;
+		padding-bottom: 30px;
+		a {
+			color: inherit;
+		}
+	}
+	&__all {
+		font-size: 14px;
+		line-height: 1.4;
+		color: rgb(0, 0, 0);
+		text-align: center;
+		font-weight: 700;
+	}
+}

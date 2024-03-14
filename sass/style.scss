@@ -1,0 +1,132 @@
+@import 'responsive.sсss';
+
+* {
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  &--price {
+    max-width: 950px;
+  }
+  &--words {
+    max-width: 1060px;
+  }
+  &--services {
+    max-width: 1760px;
+  }
+  &--about {
+    max-width: 904px;
+  }
+  &--inner {
+    max-width: 1460px;
+  }
+  &--main {
+    padding: 0;
+  }
+  &--order {
+    max-width: 540px;
+  }
+  &--contacts {
+    max-width: 1060px;
+  }
+  &--header {
+    max-width: 1480px;
+  }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #3D4048;
+  margin: 0;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid #ff6f00;
+  border-radius: 25px;
+  outline: none;
+  background: #ff6f00;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  font-weight: 900; 
+  transition: 0.25s background-color;
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  &:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: #cc5800;
+  }
+}
+
+.error {
+  font-size: 16px;
+  color: #9c0000;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+
+.title {
+  font-size: 40px;  
+  color: #FF6F00;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 40px; 
+  font-weight: 900;
+  @include media(mdx) {
+    font-size: 34px;
+  }
+  @include media(sm) {
+    font-size: 27px;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background-color: #F0EFF7;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  border-radius: 4px;
+  padding: 15px;
+  font-family: Roboto, sans-serif;
+  &--area {
+    min-height: 100px;
+    resize: none;
+  }
+}
+
+
+
+@import 'reset';
+@import 'header';
+@import 'details';
+@import 'info';
+@import 'about';
+@import 'price';
+@import 'words';
+@import 'services';
+@import 'order';
+@import 'contacts';
+@import 'footer';
+@import 'popup';
+@import 'select';
