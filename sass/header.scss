@@ -1,6 +1,17 @@
 @import 'responsive.sсss';
 
 .main-header {
+    background-color: #463D80;
+    padding: 28px 0px;
+    &.fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;    
+        padding: 28px 20px;
+        z-index: 1000;
+    }
     &__holder {
         position: relative;
         display: flex;

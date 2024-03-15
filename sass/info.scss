@@ -3,9 +3,8 @@
 .info {
 	overflow: hidden;
 	position: relative;
-	z-index: 1;
+	z-index: 5;
 	background-color: #463D80;
-	padding-top: 28px;
 	padding-bottom: 108px;
 	@include media(mdx) {
 		padding-bottom: 40px;
@@ -17,9 +16,9 @@
 		}
 		.info__wrap {
 			display: block;	
-			padding-top: 175px;	
+			padding-top: 148px;	
 			@include media(mdx) {
-				padding-top: 70px;
+				padding-top: 50px;
 			}
 		}
 		.info__line2:before,
@@ -53,7 +52,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		padding-top: 35px;
+		padding-top: 8px;
 	}
 	&__item {
 		&--content {

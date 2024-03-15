@@ -50,12 +50,12 @@
                                     <span class="line-burger"></span>
                                  </div>
                             </div>
-                            <ul class="main-header__list">
-                                <li><a href="" class="main-header__link">Про компанію</a></li>
-                                <li><a href="" class="main-header__link">Послуги</a></li>
-                                <li><a href="" class="main-header__link">Ціни</a></li>
-                                <li><a href="" class="main-header__link">Слово директора</a></li>
-                                <li><a href="" class="main-header__link">Контакти</a></li>
+                             <ul class="main-header__list">
+                                <li><a href="/#about" class="main-header__link">Про компанію</a></li>
+                                <li><a href="/#services" class="main-header__link">Послуги</a></li>
+                                <li><a href="/#price" class="main-header__link">Ціни</a></li>
+                                <li><a href="/#words" class="main-header__link">Слово директора</a></li>
+                                <li><a href="/#contacts" class="main-header__link">Контакти</a></li>
                             </ul>
                         </div>
                         <button class="main-header__btn">Звʼязатись</button>
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section class="price"> 
+        <section class="price" id="price"> 
             <div class="container container--main">
                 <div class="container container--price"> 
                     <p class="title">Ціни</p>
@@ -149,7 +149,7 @@
             </div>
         </section>  
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container container--services">
                 <div class="services__info">
                     <p class="title">Послуги</p>
@@ -229,7 +229,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container container--main">
                 <div class="contacts__inner">
                     <div class="contacts__line contacts__line1"></div>
@@ -375,6 +375,57 @@
                 </div>
             </div>
         </div>
+
+        <template id="clone-template">
+            <div class="popup__item">
+                <div class="popup__elem">
+                     <p class="popup__subtitle">Локація <span class="popup__number">1</span></p>
+                    <button type="button" class="popup__del"></button>
+                </div>
+                <div class="contacts__info">
+                    <label class="contacts__label">Оберіть послугу</label>
+                    <div class="select__wrap">
+                        <div class="select__placeholder"></div>
+                        <ul class="select__list" >
+                            <li class="select__item">Інкасація</li>
+                            <li class="select__item">Підкріплення готівкою</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts__info">
+                    <label class="contacts__label">Кількість точок</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="contacts__info">
+                    <label class="contacts__label">Місто</label>
+                    <div class="select__wrap">
+                        <div class="select__placeholder"></div>
+                        <ul class="select__list" >
+                            <li class="select__item">Киів</li>
+                            <li class="select__item">Одеса</li>
+                            <li class="select__item">Кривий Ріг</li>
+                            <li class="select__item">Дніпро</li>
+                            <li class="select__item">Львів</li>
+                            <li class="select__item">Луцьк</li>
+                            <li class="select__item">Івано-Франківськ</li>
+                            <li class="select__item">Тернопіль</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts__info">
+                    <label class="contacts__label">Обсяг</label>
+                    <div class="select__wrap">
+                        <div class="select__placeholder"></div>
+                        <ul class="select__list" >
+                            <li class="select__item">0 - 3 000 000</li>
+                            <li class="select__item">3 000 001 - 10 000 000</li>
+                            <li class="select__item">10 000 001 - 50 000 000</li>
+                            <li class="select__item">50 000 001 - І БІЛЬШЕ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </template>
 
         <section class="popup popup--request">
             <div class="popup__inner">
