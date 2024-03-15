@@ -217,11 +217,12 @@ $(document).on('click', '.main-header__link', function() {
 
 $(document).ready(function() {
     let header = $(".main-header");
-    let detailsHeight = $('.details').outerHeight();
+    
     let headerHeight = header.outerHeight();
     var info = $('.info');
     $(window).scroll(function() {
         if (header.length > 0) {
+            let detailsHeight = $('.details').outerHeight();
             let currentScroll = $(this).scrollTop();
             if (currentScroll > detailsHeight && $(window).width() <= 767) {
                 header.addClass("fixed-header");
