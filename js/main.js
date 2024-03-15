@@ -218,17 +218,18 @@ $(document).on('click', '.main-header__link', function() {
 $(document).ready(function() {
     let header = $(".main-header");
     let detailsHeight = $('.details').outerHeight();
-    let body = document.body;
+    let headerHeight = header.outerHeight();
+    var info = $('.info');
     $(window).scroll(function() {
-      if (header.length > 0) {
-        let currentScroll = $(this).scrollTop();
-        if (currentScroll > detailsHeight && $(window).width() <= 767) {
-            header.addClass("fixed-header");
-            body.style.paddingTop = detailsHeight + 'px';
-        } else {
-            header.removeClass("fixed-header");
-            body.style.paddingTop = ''
+        if (header.length > 0) {
+            let currentScroll = $(this).scrollTop();
+            if (currentScroll > detailsHeight && $(window).width() <= 767) {
+                header.addClass("fixed-header");
+                info.css('padding-top', headerHeight + 'px');
+            } else {
+                header.removeClass("fixed-header");
+                info.css('padding-top', '');
+            }
         }
-      }
     });
 });
